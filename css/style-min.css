@@ -1,0 +1,46 @@
+body{
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "PT Sains", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+
+  background: white;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation{
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+
+.main-navigation a:hover{
+  color: #81b3d2;
+}
+
+.main-navigation a:focus{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.greetings {
+  background-image: url("img/background-welcome.jpg");
+}
