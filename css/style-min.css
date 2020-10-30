@@ -227,3 +227,72 @@ input[type='text']:focus{
 .social-btn:active{
 
 }
+
+.search-filter{
+  text-align: center;
+}
+
+.search-form {
+  background-image: url("../img/background-filter.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.search-form fieldset{
+  border: none;
+}
+
+.filter-interstructure legend,
+.filter-lodgin legend,
+.filter-price legend{
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.search-form li {
+  list-style: none;
+}
+
+.search-form label{
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.search-form [value]{
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.search-form input:focus,
+.search-form input:hover,
+.search-form input{
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+
+}
+
+
+.filter-button {
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 2px;
+  border: 2px solid #ffffff;
+  width: 139px;
+  height: 36px;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+
+.filter-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
