@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+li {
+ list-style: none;
+}
+
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
@@ -115,12 +119,18 @@ a {
 
 
 .button {
+
+  padding: 4px 17px 3px;
   font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
   font-weight: 700;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+
+}
+
 }
 
 .button-show-modal{
@@ -295,4 +305,32 @@ input[type='text']:focus{
 .filter-button:hover {
   background-color: #ffffff;
   color: #000000;
+}
+
+.button-brown{
+  background-color:#766357;
+}
+
+.button-brown:hover{
+  background-color: #604e43;
+}
+
+.button-brown:active{
+  background-color: #503e33;
+  color: #928a85;
+}
+
+.hotel-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-title:hover{
+  color: #81b3d2;
+}
+
+.hotel-title:active {
+  color:  rgba(0, 0, 0, 0.5);
 }
