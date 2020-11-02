@@ -1,3 +1,9 @@
+.html {
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+
 body{
   margin: 0px;
   padding: 0px;
@@ -7,10 +13,11 @@ body{
   line-height: 21px;
   color: #333333;
   text-transform: uppercase;
-
-  background-color: #f2f2f2;
+  box-shadow: 0 0 15px rgba(0,0,0,.2);
+  background-color: #fff;
   background-position: top center;
   background-repeat: no-repeat;
+
 }
 
 .visually-hidden {
@@ -119,7 +126,7 @@ li {
 
 
 .button {
-
+  display: inline-block;
   padding: 4px 17px 3px;
   font: inherit;
   font-weight: 700;
@@ -128,6 +135,7 @@ li {
   text-transform: uppercase;
   border: 0;
   outline: 0;
+
 
 }
 
