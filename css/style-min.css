@@ -334,3 +334,7 @@ input[type='text']:focus{
 .hotel-title:active {
   color:  rgba(0, 0, 0, 0.5);
 }
+
+.sort-from fieldset{
+  border: none;
+}
