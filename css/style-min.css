@@ -136,6 +136,7 @@ img {
   padding: 0px;
   z-index: -1;
   background-position: 0px -56px;
+  margin-bottom: 32px;
 
 
 }
@@ -146,12 +147,6 @@ img {
     margin: auto;
 }
 
-.advantages{
-  text-align: center;
-
-}
-
-
 
 .greetings p {
   margin: 60px 240px 0;
@@ -159,7 +154,7 @@ img {
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 27px;
+
 
 }
 
@@ -170,19 +165,67 @@ img {
 
 }
 
+.advantages{
+  text-align: center;
+  position: relative;
+  z-index: 10;
+
+}
+
 .advantages h2 {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   color: #333333;
+  margin-bottom: 56px;
+  text-align: center;
 }
 
-.advantages ol {
+.advantages-list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 51px 0 0;
+  flex-wrap: wrap;
 }
+
+.features-list{
+  display: flex;
+}
+
+
+.features{
+  order: 2;
+}
+
+
 
 .advantages ul{
   list-style: none;
+
+}
+
+.advantages-item-wrapper {
+  flex-direction: row;
+
+
+}
+
+
+
+.advantages-item.advantages-photo {
+  display: flex;
+
+}
+
+.advantages-photo-reversed {
+  flex-direction: row-reverse;
+}
+
+.advantages-item-wrapper h3{
+  margin: 0px;
+  padding: 0px;
 }
 
 .advantages-item:first-child,
