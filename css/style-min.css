@@ -195,10 +195,6 @@ img {
 }
 
 
-.features{
-  order: 2;
-}
-
 
 
 .advantages ul{
@@ -207,7 +203,12 @@ img {
 }
 
 .advantages-item-wrapper {
-  flex-direction: row;
+  width: 400px;
+  padding-top: 47px;
+  padding-bottom: 58px;
+  font: inherit;
+  color: #333;
+  text-align: center;
 
 
 }
@@ -219,6 +220,14 @@ img {
 
 }
 
+.advantages-photo h3, .advantages-photo p, .advantages-photo span {
+  color: #fff;
+}
+
+.advantages-item:nth-child(2){
+  order: -1;
+}
+
 .advantages-photo-reversed {
   flex-direction: row-reverse;
 }
@@ -228,8 +237,7 @@ img {
   padding: 0px;
 }
 
-.advantages-item:first-child,
-.advantages-item:nth-child(2){
+.advantages-photo{
   background-color: #81b3d2;
   color: white;
 }
