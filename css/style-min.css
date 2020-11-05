@@ -364,6 +364,7 @@ img {
 
 .modal-search{
   text-align: center;
+  box-shadow: 0 7px 15px rgba(0,0,0,.15);
 
 }
 
@@ -385,6 +386,27 @@ img {
   margin-bottom: 0;
 }
 
+.button-minus,
+.button-plus{
+  position: relative;
+}
+
+.button-minus,
+.button-plus,
+.button-calendar{
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
 .search-form-item label,
 .search-form-item label{
   margin-right: 9px;
@@ -394,6 +416,8 @@ img {
   width: 179px;
   margin-bottom: 0;
 }
+
+
 
 .button-search{
   margin-top: 30px;
@@ -463,11 +487,31 @@ input[type='text']:focus{
   text-align: center;
 }
 
+.main-footer{
+  display: flex;
+  min-height: 120px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-main-page{
+
+
+
+}
+
 .instagram{
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+  margin: -3px 0 0;
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
+
 }
 
 .instagram:hover{
@@ -478,11 +522,21 @@ input[type='text']:focus{
   color:  rgba(0, 0, 0, 0.5);
 }
 
+
+.footer-social{
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+}
+
 .social-btn {
   background-color: #81b3d2;
-  color: #ffffff;
-  width: 46px;
+  position: relative;
   height: 48px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  outline: 0;
+  width: 46px;
 }
 
 }
