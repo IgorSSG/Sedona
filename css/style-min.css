@@ -332,7 +332,6 @@ img {
 
 
 
-
 .button {
   display: inline-block;
   padding: 4px 17px 3px;
@@ -343,10 +342,6 @@ img {
   text-transform: uppercase;
   border: 0;
   outline: 0;
-
-
-}
-
 }
 
 .button-show-modal{
@@ -357,6 +352,52 @@ img {
   font-size: 21px;
   line-height: 26px;
 
+}
+
+.modal-serch-form, .search-form-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.modal-search{
+  text-align: center;
+
+}
+
+.modal-serch-form{
+  flex-wrap: wrap;
+  width: 458px;
+  margin: 0 auto;
+
+}
+
+.hotel-search {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+.search-form-item.number-item {
+  width: 226px;
+  margin-bottom: 0;
+}
+
+.search-form-item label,
+.search-form-item label{
+  margin-right: 9px;
+}
+
+.search-form-item.number-item:last-of-type {
+  width: 179px;
+  margin-bottom: 0;
+}
+
+.button-search{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .button-show-modal:hover{
