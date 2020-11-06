@@ -550,18 +550,87 @@ input[type='text']:focus{
 }
 
 .search-filter{
-  text-align: center;
-}
 
-.search-form {
   background-image: url("../img/background-filter.png");
   background-repeat: no-repeat;
   background-position: center top;
+  min-height: 217px;
+  font: inherit;
+  color: #fff;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 26px;
+  padding-bottom: 32px;
 }
 
 .search-form fieldset{
   border: none;
+  width: 230px;
+  margin-right: 25px;
+  margin-left: 0;
+  padding: 0;
+  border: 0;
 }
+
+fieldset.filter-price{
+  width: 100%;
+  margin-right: 0;
+}
+
+.filter-interstructure,
+.filter-lodgin{
+  text-align: left;
+}
+
+
+
+.last-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 318px;
+  margin-left: auto;
+}
+
+.price-controls{
+  position: relative;
+  height: 36px;
+  margin-top: 10px;
+  font-size: 0;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.price-controls .max-price, .price-controls .min-price {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+    padding-left: 65px;
+    font-size: 14px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+button, input {
+    overflow: visible;
+}
+
+.price-controls input {
+    vertical-align: middle;
+    width: 58px;
+    height: 32px;
+    margin: 0 0 0 -3px;
+    padding: 0 0 0 3px;
+    font: inherit;
+    font-size: 14px;
+    line-height: 32px;
+    color: inherit;
+    background: 0 0;
+    border: 0;
+  }
 
 .filter-interstructure legend,
 .filter-lodgin legend,
@@ -573,8 +642,15 @@ input[type='text']:focus{
   font-weight: 700;
 }
 
+.search-form ul {
+  list-style: none;
+  margin: 25px 0 0;
+  padding: 0;
+}
+
 .search-form li {
   list-style: none;
+  margin-bottom: 25px;
 }
 
 .search-form label{
@@ -583,9 +659,82 @@ input[type='text']:focus{
   color: #ffffff;
 }
 
+.price-controls::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background-color: #fff;
+  transform: translate(-50%,-50%);
+}
+
+.duble-range-controls{
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.double-range-controls, .scale {
+  height: 2px;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.double-range-controls, .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.filter-button {
+  align-self: center;
+  max-width: 100%;
+  margin-top: 18px;
+  margin-right: 9px;
+  margin-bottom: 2px;
+  padding: 5px 34px;
+  font: inherit;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.range-toggle.range-toggle-min{
+  position: absolute;
+  top: -9px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+  cursor: pointer;
+  left: 0;
+}
+
+.range-toggle.range-toggle-max{
+  position: absolute;
+  top: -9px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+  cursor: pointer;
+  left: 0;
+}
+
+
+
 .search-form [value]{
   font-size: 14px;
-  line-height: 21px;
   color: #ffffff;
   font-weight: normal;
 }
@@ -595,11 +744,9 @@ input[type='text']:focus{
 .search-form input{
   background-color: transparent;
   outline: none;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+
 
 }
-
 
 .filter-button {
   background-color: transparent;
