@@ -95,15 +95,17 @@
 
       <!-- Поиск гостиницы -->
       <section class="hotel-search">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button button-show-modal" type="button"> Поиск гостиницы в Седоне</button>
+        <div class="hotel-search-wrapper">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="button button-show-modal button-brown" type="button"> Поиск гостиницы в Седоне</button>
+        </div>
       <!-- Окно поиска гостиницы -->
         <section class="modal-serch">
           <h3 class="visually-hidden"> Поиск гостинниы в Седоне</h3>
           <form class="modal-serch-form" action="#" method="get">
             <p class="search-form-item">
-              <label for="arrival-date">Дата заезда</label>
+              <label for="arrival-date">Дата заезда:</label>
               <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апредя 2017"
               pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" title="поле для ввода даты заезда">
               <button class="button-calendar" type="button">
@@ -111,7 +113,7 @@
               </button>
             </p>
             <p class="search-form-item">
-              <label for="date-of-departure">Дата заезда</label>
+              <label for="date-of-departure">Дата заезда:</label>
               <input id="date-of-departure" type="text" name="date-of-departure" value="" placeholder="4 июля 2017"
               pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" title="поле для ввода даты выезда">
               <button class="button-calendar" type="button">
