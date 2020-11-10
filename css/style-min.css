@@ -31,8 +31,11 @@ body{
   margin: -1px;
   border: 0;
   padding: 0;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  white-space: nowrap;
+
 }
 
 a {
@@ -1000,4 +1003,14 @@ input[type=checkbox]+label, input[type=radio]+label {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.copyright-logo::after, .social-btn::after {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 48px;
 }
