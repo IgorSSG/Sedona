@@ -450,7 +450,7 @@ img {
 }
 
 .button-blue:active{
-  background-color: #81b3d2;
+  background-color: #669ec0;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -997,6 +997,14 @@ input[type=checkbox]+label, input[type=radio]+label {
   margin-bottom: 6px;
   outline: 0;
   width: 46px;
+}
+
+.social-btn svg{
+  fill: rgba(255, 255, 255);
+}
+
+.social-btn:active svg{
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .copyright, .social-btn {
