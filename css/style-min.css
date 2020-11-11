@@ -671,6 +671,7 @@ fieldset.filter-price{
   height: 23px;
 
   background-image: url("../svg/checkbox-off.svg");
+  
   background-position: 0 0;
   background-repeat: no-repeat;
 }
