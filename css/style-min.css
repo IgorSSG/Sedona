@@ -397,8 +397,15 @@ img {
   flex-wrap: wrap;
   width: 458px;
   margin: 0 auto;
-
 }
+
+.search-form-item{
+  align-items: center;
+  width: 100%;
+  margin: 0 0 30px;
+}
+
+
 
 .search-form-item.number-item {
   width: 226px;
@@ -501,7 +508,7 @@ input[type='text']:hover{
 }
 
 input[type='text']:focus{
-  background-color: #ffffff;
+  background-color: transparent;
   outline: 2px solid  #ebebeb;
 }
 
